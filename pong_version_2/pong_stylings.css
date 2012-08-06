@@ -1,0 +1,35 @@
+body {
+	background-color: #CD853F;
+	text-align:center;
+}
+h1 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 90px;
+	margin: 22px 0px 0px 0px;
+}
+#subhead{
+	font-family: Monospace;
+	font-size: 15px;
+	background-color: #CD853F;
+	padding: 2px;
+}
+#pongframe {
+	width: 600; 
+	height: 400;
+	border-color: #F5DEB3;
+	border-width:10px;	
+	border-style:groove;
+	border-radius: 8px;
+	margin: 10px;
+}
+button {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 120%;
+	padding: 6px;
+}
+#instructions{
+	font-family: Monospace;
+	font-size: 17px;
+	background-color: #CD853F;
+	margin: 10px;
+}
