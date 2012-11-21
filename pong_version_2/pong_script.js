@@ -29,9 +29,17 @@ var computer={
 	y: 180,
 	speed:1.2,  //nominal 1.2 for the game (keep below 2) -->determines difficulty, higher = more difficulty
 };
+var clock={};
 
 var bottom=can.height-racket.height;	
 var keyboard = { };
+
+function reset_vars() {
+	stats.comp_score=0;
+	stats.player_score=0;
+	ball.speed=2;
+	computer.speed=1.2;
+}
 
 function updatePlayer() {
 	if(stats.player_score<max_score && stats.comp_score<max_score) {
@@ -205,7 +213,9 @@ function attachEvent(node,name,func) { //from Josh Marinacci's "Canvas Deep Dive
 doSetup();
 
 function startgame() {
-	setInterval(mainLoop,5);
+	clearInterval(clock);
+	reset_vars();
+	clock=setInterval(mainLoop,5);
 }
 
 drawBackground(pong);
